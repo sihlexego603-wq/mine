@@ -1,0 +1,199 @@
+/*Sihle Xego 230165095*/
+#menu li
+{
+    display: inline;
+    margin-right: 2em;  
+}
+a{
+text-decoration:none;
+color: #e76f51;
+}
+a:hover{
+    color: #f4a261
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    text-align: center;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #a8c686;
+    padding: 0.5em
+    
+}
+.highlight{
+    font-style: italic;
+    color: #e76f51;
+    position: relative;
+    z-index: 2;
+}
+#myimage{
+    border: 3px solid #a8c686;
+    margin: 1em;
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+    font-size: 70%;
+}
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fbe8a6;
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0.5em;
+}
+h1
+{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #f4a261
+}
+h2
+{
+    text-align: center;
+    font-style: italic;
+    color: #6b4226;
+}
+.page{
+    width: 80%;
+    margin: auto;
+}
+.main{
+    display: flex;
+}
+.sub-main{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color: floralwhite;
+    margin-bottom: 0.5em;
+}
+#menu{
+    margin: 0.5em;
+    padding: 0.5em;
+    border-bottom: 1px solid #a8c686;
+    border-top: 1px solid #a8c686;
+    text-align: center;
+}
+.flexitem3{
+    order: -2;
+    flex-basis: 25%;
+}
+.flexitem2{
+    order: -1;
+    flex-basis: 50%;
+    margin-left: 4em;
+}
+.flexitem1{
+flex-basis: 25%;
+}
+.flexitem4{
+    flex: 1 50%;
+    -ms-flex-item-align: center;
+}
+.flexitem5{
+-ms-flex-item-align: center;
+padding: 1.5em;
+text-align: center;
+
+}
+.images{
+    display: flex;
+    flex-wrap:wrap;
+}
+.image{
+    flex: 1 30%;
+    box-sizing: border-box;
+    -ms-flex-align: center;
+    padding: 1.5em;
+}
+.image img{
+    width: 100%;
+    height: 375px;
+
+}
+.image:hover{
+    border: 1px solid #a8c686;
+    background-color: floralwhite;
+    padding: 1em;
+}
+@media (max-width: 800px){
+    .flexitem1{
+        flex: 1 100%;
+    }
+    .flexitem2{
+        flex: 1 100%;
+    }
+    .flexitem3{
+        flex: 1 100%;
+    }
+    .flexitem4{
+        flex: 1 40%;
+        padding: 0.5em;
+    }
+    .flexitem5{
+        flex: 1 40%;
+        padding: 0.5em;
+    }
+}
+.tiptext{
+    display: none;
+}
+.highlight:hover .tipText{
+    display: block;
+    color: red;
+    background-color: whitesmoke;
+    font-size: 70%;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 200px;
+}
+#home #homeLink{
+    font-weight: bold;
+    background-color: floralwhite;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+#essentials #essentialsLink{
+    font-weight: bold;
+    background-color: floralwhite;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+#recipes #recipesLink{
+    font-weight: bold;
+    background-color: floralwhite;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+#submit #submitLink{
+    font-weight: bold;
+    background-color: floralwhite;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+#formHead{
+    color: #6b4226;
+    font-weight: bold;
+}
+fieldset{
+    border: #6b4226 thick solid;
+    padding: 2em;
+}
+#rec{
+    width: 300px;
+}
+.btn{
+    margin-top: 2em;
+    margin-right: 2em;
+    background-color: #6b4226;
+}

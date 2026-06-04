@@ -1,0 +1,70 @@
+<!-- Add your Assignment 4A code here  -->
+ <html>
+    <head>
+        <link href="Styles/Stylesheet.css" type="text/css" rel="Stylesheet"/>
+        <title>Time Traveller</title>
+    </head>
+    <body>
+        <nav>
+             <ul>
+                <li> <a href="Home.html"> Home </a></li>
+                <li> <a href="TimeTravelTips.html"> Time Travel Tips </a></li>
+                <li> <a href="BookATrip.html"> Book a Trip </a></li>
+                <li> <a href="TravelerStories.html"> Traveller Stories </a></li>
+             </ul>
+        </nav>
+        <form action="mailto:s230165095@mandela.ac.za">
+            <fieldset>
+                <h1 class="heading">Book a trip here</h1>
+        <table>
+            <tr>
+                <td><label for="name">Traveller name: </label></td>
+                <td><input type="text"name="name" size="9"id="name"/></td>
+            </tr>
+            <tr>
+                <td><label for="num">Number of travellers: </label></td>
+                <td><input type="number"name="num"min="1"max="4"step="1"value="1"id="travellers"/></td>
+            </tr>
+            <tr>
+                <td><label for="destination">Choose destination: </label></td>
+                <td>
+                    <select id="destination">
+                        <option value="Ancient Egypt (1350 BCE)">Ancient Egypt (1350 BCE)</option>
+                        <option value="Golden Age of Privacy (1960s)">Golden Age of Privacy (1960s)</option>
+                        <option value="Wild West (1870s)">Wild West (1870s)</option>
+                        <option value="Roaring Twenties (1925)">Roaring Twenties (1925)</option>
+                        <option value="Cyberpunk Metripolis (2142)">Cyberpunk Metripolis (2142)</option>
+                        <option value="Martian Colony (2300)">Martian Colony (2300)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="days">Length of stay (in local days): </label></td>
+                <td><input type="number"name="days"min="1"max="365"step="1"value="10"id="days"/></td>
+            </tr>
+        </table>
+        <h2 class="choice">Prefered time-machine model</h2>
+        <div id="machine">
+        <input type="radio"name="machine"value="Classic DeLorean"/>Classic DeLorean-88mph of style
+        <br/>
+        <input type="radio"name="machine"value="Steampunk Portal"/>Steampunk Portal-Gears, brass, and tea
+        <br/>
+        <input type="radio"name="machine"value="Quantum Suit"/>Quantum Suit-Sleek pockets dimensionally bigger on the inside
+        <br/>
+        </div>
+        <h2 class="choice">Optional Temporal Insurance (check all that apply)</h2>
+
+        <input type="checkbox"name="insurance"value="Insurance"/>Clone replacement (in case you cease to exist)
+        <br/>
+        <input type="checkbox"name="insurance"value="Insurance"/>Historical rewind (one free do-over, no questions asked)
+        <br/>
+        <input type="checkbox"name="insurance"value="Insurance"/>Butterfly-Effect (covers minor timeline hiccups)
+        <br/>
+        <div class="btn"><button id="btn">Generate Quote</button></div>
+        
+        </form>
+        <div id="quoteOutput"></div>
+        </fieldset>
+        <script src="Script/script.js"></script>
+    </body>
+ </html>
