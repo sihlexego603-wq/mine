@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <link href="stylesheet/style.css"rel="Stylesheet"type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Home</title>
+        
+    </head>
+    <body>
+        <header>
+            <img src="Images/Screenshot 2026-05-20 132403.png"alt="logo"id="logo">
+
+            <nav class="nav-links">
+                <a href="#logo"class="active">Home</a>
+                <a href="#second">About</a>
+                <a href="#third">Projects</a>
+                <a href="#fourth">Contact</a>
+            </nav>
+        </header>
+        <section class="content">
+            <div class="myPhoto">
+                <img src="Images/photo3.jpeg" id="photo" alt="Photo">
+            </div>
+            <div class="homeContent">
+                <h1>Hi I'm <span id="name">Sihle Xego</span></h1>
+                <h3>Aspiring Web Developer.</h3>
+                <p>I build interactive and responsive Websites.</p>
+            </div>
+        </section>
+        <h1 class="heading"id="second">ABOUT ME</h1>
+        <section class="flexCont">
+            
+            <div class="flexItem">
+                <h2>About me</h2>
+                <p>I enjoy creating websites because it challenges me to bring ideas to life. I have strong time management and adaptability skills while balancing demanding coursework with creative projects.</p>
+            </div>
+            <div class="flexItem">
+                <h2>Skills</h2>
+                <p>My skills include building responsive layouts, implementing animations, and designing user‑friendly interfaces. I’ve worked on many projects which challenged me to think critically for user friendly experiences.</p>
+                
+            </div>
+            <div class="flexItem">
+                <h2>Education & Goals</h2>
+                <p>I’m an Information Systems and Business Management student at Nelson Mandela University with a passion for web development and interactive design. My career goal is to become a professional web developer who builds engaging digital experiences for clients and users worldwide.</p>
+            </div>
+            <br>
+        </section>
+        <div class="cont">
+       <span class="tip"><button>html<span class="tiptext">&lt;html&gt;<br>&lt;p&gt;hello world&lt;/p&gt;<br>&lt;html&gt;</span></button></span>
+                <span class="tip"><button>CSS<span class="tiptext">body{<br>background-color: black;<br>color: whitesmoke;<br>font-weight: bold;}</span></button></span>
+                <span class="tip"><button>JQuery<span class="tiptext">$(.button).onclick(function(){<br>#(this).toogle();<br>});</span></button></span>
+                <span class="tip"><button>Javascript<span class="tiptext">let output='hello world'<br>document.getElementById<br>("quoteOutput").innerHTML=output;</span></button></span>
+                </div>
+        <h1 class="heading"id="third">My Projects</h1>
+        <h2 class="heading">A showcase of my recent work</h2>
+        <section class="flexCont">
+           <div class="projectCard">
+                <img src="Images/Funland.png" class="picture" alt="Photo">
+                <p>Interactive site with jQuery animations and ticket calculator.</p>
+                <a href=".Projects/MyProject2/Home.html"class="btn">View project</a>
+           </div>
+           <div class="projectCard">
+             <img src="Images/RecipeBook.png" class="picture" alt="Photo">
+             <p>A user friendly and interactive Recipe site showcasing good design skills.</p>
+             <a href=".Projects/MyProject3/Home.html"class="btn">View project</a>
+           </div>
+           <div class="projectCard">
+              <img src="Images/BookaTrip.png" class="picture" alt="Photo">
+              <p>Booking form and quote generator using modular JavaScript.</p>
+              <a href=".Projects/MyProject1/BookATrip.html"class="btn">View project</a>
+           </div>
+        </section>
+        <h1 class="heading"id="fourth">Contact me</h1>
+        
+        <section>
+            <fieldset>
+            <form action="mailto:sihlexego603@gmail.com">
+                <table>
+                    <tr>
+              <td><label for="name">First name: </label></td>
+              <td><input type="text"name="name"/></td>
+              </tr>
+              <tr>
+              <td><label for="email">Email address: </label></td>
+              <td><input type="text"name="email"/></td>
+              </tr>
+              </table>
+              <textarea rows="10"cols="100"name="recipe">Message</textarea>
+                <br/>
+                <input type="reset" value="Clear"/>
+                <input type="submit"value="Send"/>
+            </form>
+            </fieldset>
+            <div class="cont">
+            <a href="https://wa.me/0835559773" target="_blank" class="contact"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+            <a href="mailto:sihlexego603@gmail.com" class="contact"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="tel:0835559772" class="contact"><i class="fas fa-phone"></i> Call Me</a>
+            </div>
+        </section>
+        <footer>
+            <p>@2026 by Sihle Xego</p>
+        </footer>
+    </body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="script/script.js" type="text/javascript"></script>
+</html>
